@@ -18,6 +18,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -43,7 +51,9 @@
         <div class="container hero-container">
           <div class="wrapper">
             <div class="content-wrapper">
-              <h1 class="hero-title">
+              <h1
+                class="hero-title animate__animated animate__lightSpeedInRight"
+              >
                 Find a gift for your wife or girlfriend
               </h1>
               <p class="hero-text">
@@ -53,12 +63,24 @@
               <button type="button" class="hero-btn">Find gift now</button>
             </div>
           </div>
-          <img src="./images/hero.jpg" alt="hero" width="720" height="700" />
+          <img
+            src="./images/hero.jpg"
+            alt="hero"
+            width="720"
+            height="700"
+            class="hero-img"
+          />
         </div>
       </section>
       <section class="about-us">
         <div class="container about-us-container">
-          <img src="./images/tanks.jpg" alt="thanks" width="720" height="600" />
+          <img
+            src="./images/tanks.jpg"
+            alt="thanks"
+            width="720"
+            height="600"
+            class="about-us-img"
+          />
           <div class="wrapper">
             <div class="content-wrapper">
               <h2 class="about-us-title">How we work</h2>
@@ -79,60 +101,63 @@
           <p class="subtitle">
             “Try our web app to find the best gifts for all occasions”
           </p>
-          <ul class="categories-list">
-            <li class="categories-item">
-              <img
-                src="./images/category-1.jpg"
-                alt="category-1"
-                width="270"
-                height="270"
-                class="categories-img"
-              />
-              <div class="categories-item-wrap">
-                <h3 class="categories-title">Birthday</h3>
-                <a href="" class="categories-link">See More</a>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./images/category-1.jpg"
+                  alt="category-1"
+                  width="270"
+                  height="270"
+                  class="categories-img"
+                />
+                <div class="categories-item-wrap">
+                  <h3 class="categories-title">Birthday</h3>
+                  <a href="" class="categories-link">See More</a>
+                </div>
               </div>
-            </li>
-            <li class="categories-item">
-              <img
-                src="./images/category-2.jpg"
-                alt="category-2"
-                width="270"
-                height="270"
-                class="categories-img"
-              />
-              <div class="categories-item-wrap">
-                <h3 class="categories-title">Anniversary</h3>
-                <a href="" class="categories-link">See More</a>
+              <div class="swiper-slide">
+                <img
+                  src="./images/category-2.jpg"
+                  alt="category-2"
+                  width="270"
+                  height="270"
+                  class="categories-img"
+                />
+                <div class="categories-item-wrap">
+                  <h3 class="categories-title">Anniversary</h3>
+                  <a href="" class="categories-link">See More</a>
+                </div>
               </div>
-            </li>
-            <li class="categories-item">
-              <img
-                src="./images/category-3.jpg"
-                alt="category-3"
-                width="270"
-                height="270"
-                class="categories-img"
-              />
-              <div class="categories-item-wrap">
-                <h3 class="categories-title">Valentine's Day</h3>
-                <a href="" class="categories-link">See More</a>
+              <div class="swiper-slide">
+                <img
+                  src="./images/category-3.jpg"
+                  alt="category-3"
+                  width="270"
+                  height="270"
+                  class="categories-img"
+                />
+                <div class="categories-item-wrap">
+                  <h3 class="categories-title">Valentine's Day</h3>
+                  <a href="" class="categories-link">See More</a>
+                </div>
               </div>
-            </li>
-            <li class="categories-item">
-              <img
-                src="./images/category-4.jpg"
-                alt="category-4"
-                width="270"
-                height="270"
-                class="categories-img"
-              />
-              <div class="categories-item-wrap">
-                <h3 class="categories-title">Christmas</h3>
-                <a href="" class="categories-link">See More</a>
+              <div class="swiper-slide">
+                <img
+                  src="./images/category-4.jpg"
+                  alt="category-4"
+                  width="270"
+                  height="270"
+                  class="categories-img"
+                />
+                <div class="categories-item-wrap">
+                  <h3 class="categories-title">Christmas</h3>
+                  <a href="" class="categories-link">See More</a>
+                </div>
               </div>
-            </li>
-          </ul>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
       <section class="register">
@@ -269,5 +294,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
